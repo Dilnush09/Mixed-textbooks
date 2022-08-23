@@ -1,21 +1,6 @@
 import React, { useState } from "react";
-import "./app.css";
-import AdminList from "./PropsItems/AdminList";
-import UserList from "./PropsItems/UserList";
-import { AiTwotonePhone } from "react-icons/ai";
-import { FaAngellist, FaBuffer } from "react-icons/fa";
-import Data from "./HandleEvent/Data";
-import Auth from "./SignIn/Auth";
-import CardTable from "./Carosuel.js/CardTable";
-import ListAndKey from "./ListAndKey/ListAndKey";
-import NavbarItem from "./ReactRouterDom/NavbarItem";
-import Interval from "./Life_cycle/Interval";
-import ChangeHook from "./Life_cycle/ChangeHook";
-import GetUser from "./Method/GET/GetUser";
-import GetData from "./HTTPS/GET/GetData";
-import PostData1 from "./HTTPS/POST/PostData1";
-import PostMethod from "./Method/POST/PostMethod";
 import PostMethod2 from "./Method/POST/PostMethod2";
+import Postjs from "./Post/Post";
 function App() {
   const [person, setperson] = useState([
     { id: 1, name: "Jamshid", age: 23 },
@@ -35,21 +20,7 @@ function App() {
   ]);
   return (
     <>
-      {/* <UserList user={person}>User Interface</UserList>
-      <AdminList user={tecno} >Admin dashboard</AdminList>
-     <h2> <AiTwotonePhone/></h2>
-     <h2><FaAngellist/></h2>
-     <h2><FaBuffer/></h2> */}
-      {/* <Data /> */}
-      {/* <Auth /> */}
-      {/* <NavbarItem /> */}
-      {/* <Interval/> */}
-      {/* <ChangeHook/> */}
-      {/* <ListAndKey/> */}
-      {/* <PostData1/> */}
-      {/* <GetData/> */}
-      {/* <PostMethod/> */}
-      <PostMethod2 />
+      <Postjs />
     </>
   );
 }

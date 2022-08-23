@@ -1,11 +1,14 @@
 import React, { useEffect, useState } from "react";
 import PuffLoader from "react-spinners/PuffLoader";
+
 export default function PostMethod2() {
+
   const [getUser, setGetUser] = useState([]);
   const [loader, setLoader] = useState(true);
   const [name, setName] = useState();
   const [year, setYear] = useState();
   const url = 'https://reqres.in/api/users"';
+
   useEffect(() => {
     fetch(`${url}`)
       .then((res) => res.json())
